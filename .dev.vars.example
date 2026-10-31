@@ -1,0 +1,8 @@
+# Local development only. Copy to .dev.vars; never commit the populated file.
+# Public DISCORD_CLIENT_ID and DISCORD_REDIRECT_URI bindings are set in wrangler.jsonc.
+DISCORD_CLIENT_SECRET="replace-with-discord-oauth2-client-secret"
+# Generate a separate local signing key: npm run -s keygen
+# Paste the one-line JSON JWK as this value (do not commit it).
+OIDC_PRIVATE_JWK='{"kty":"RSA","n":"REPLACE","e":"AQAB","d":"REPLACE"}'
+# Optional: needed for role lookup if DISCORD_GUILD_IDS is set in wrangler.jsonc
+# DISCORD_TOKEN="replace-with-discord-bot-token"

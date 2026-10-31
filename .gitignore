@@ -1,3 +1,9 @@
 node_modules/
-config.json
 .wrangler/
+config.json
+# Local development secrets: never commit them.
+.dev.vars*
+!.dev.vars.example
+.env*
+# Private key export files, if you create any locally.
+*.private.jwk

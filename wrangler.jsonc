@@ -1,0 +1,14 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "discord-oidc",
+  "main": "worker.js",
+  // Review this date when upgrading dependencies or Wrangler.
+  "compatibility_date": "2026-10-31",
+  // Non-sensitive bindings; this file is the source of truth for Wrangler deploys.
+  "vars": {
+    "DISCORD_CLIENT_ID": "YOUR_DISCORD_APPLICATION_ID",
+    "DISCORD_REDIRECT_URI": "https://YOURNAME.cloudflareaccess.com/cdn-cgi/access/callback",
+    // For optional Discord role claims, add:
+    // "DISCORD_GUILD_IDS": "438781053675634713,123456789012345678"
+  }
+}
